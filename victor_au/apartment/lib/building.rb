@@ -8,11 +8,11 @@ class Building
   end
 
   def view_apartments
-    apartments.map do |apartment|
-      puts "Number: #{apartment.number}"
-      puts "  Square feet: #{apartment.apartment_square_feet}"
-      puts "  Bedrooms: #{apartment.apartment_bedrooms}"
-      puts "  Bathrooms: #{apartment.apartment_bathrooms}"
+    apartments.map do |x|
+      puts "Number: #{x.number}"
+      puts "  Square feet: #{x.apartment_square_feet}"
+      puts "  Bedrooms: #{x.apartment_bedrooms}"
+      puts "  Bathrooms: #{x.apartment_bathrooms}"
     end
   end
 
