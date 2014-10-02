@@ -13,9 +13,11 @@
 # debug your way through populating the contents of the three classes in lib/.
 # There is no need to edit anything in this file.
 
-require_relative 'lib/building'
-require_relative 'lib/apartment'
-require_relative 'lib/person'
+require 'pry'
+
+require_relative 'lib/building.rb'
+require_relative 'lib/apartment.rb'
+require_relative 'lib/person.rb'
 
 def create_building
   puts '-----------New Building-----------'
@@ -68,6 +70,7 @@ apartment_count = gets.to_i
 
 1.upto(apartment_count) do |unit|
   apartment = create_apartment
+
   building.apartments << apartment
 
   puts "Apartment number #{apartment.number} added successfully"
@@ -90,5 +93,5 @@ response = gets.strip
 if response == 'v'
   building.view_apartments
 else
-  puts 'Thanks for using Ruby Building Manager'
+  puts 'Thanks for using Ruby Building Manager!'
 end
