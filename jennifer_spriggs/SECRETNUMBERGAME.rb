@@ -45,23 +45,11 @@ while playagain == "y"
 
   puts "(^_^) PLEASE GUESS A NUMBER BETWEEN 1 and 10! You have three guesses!"
 
-# def play
-  #   greeting
-  #   @guesses.times do |n|
-  #     guesses_left = n-1 
-  #     puts "\nYou have #{guesses_left} guesses left!"
-  #     puts "Please make your first guess:"
-  #     players_guess = $stdin.gets.chomp.to_i
-  #     return if correct?(players_guess)
-  #   end
-  #   puts "You lost! :-( The number to guess was #{@secret_number}."
-  # end
+
 
   while !win
       guessedNumber = gets.to_i
 
-    times_to_loop = 3
-    i = 0
 
       while i < times_to_loop
         if guessedNumber > randNum then
