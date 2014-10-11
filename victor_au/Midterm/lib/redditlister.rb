@@ -1,8 +1,7 @@
 require 'rest-client'
 require 'JSON'
-require 'pry'
 
-class Midterm
+class RedditLister
   def ask_subreddit
     puts "\n"
     puts 'Hi! This program will list the top 25 posts of your chosen subreddit.'
@@ -80,6 +79,3 @@ class Midterm
     list_posts
   end
 end
-
-midterm = Midterm.new
-midterm.start
