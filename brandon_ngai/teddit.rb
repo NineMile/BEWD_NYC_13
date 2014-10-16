@@ -16,7 +16,7 @@ def calculate_upvotes(story, category)
   upvotes *= 3 if story.include? 'food' 
 
   upvotes
-  
+
 end
 
 puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
